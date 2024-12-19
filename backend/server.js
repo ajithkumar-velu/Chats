@@ -14,11 +14,7 @@ const PORT = process.env.PORT || 2000
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({
-    origin: "https://chats-frontend-virid.vercel.app",
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true
-}))
+app.use(cors())
 
 app.use('/api/user', authRouter)
 app.use("/api/message", messageRouter)
