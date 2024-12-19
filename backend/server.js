@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors(
     {
-        
+    origin: "https://chats-backend-beige.vercel.app",  
     credentials: true
     }
 ))
