@@ -23,7 +23,7 @@ app.use('/api/user', authRouter)
 app.use("/api/message", messageRouter)
 
 app.get("/", (req, res)=>{
-    res.json(message: "It's working")
+    res.send("It's working")
 })
 
 server.listen(PORT, ()=>{
