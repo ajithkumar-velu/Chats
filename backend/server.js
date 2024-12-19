@@ -22,6 +22,10 @@ app.use(cors({
 app.use('/api/user', authRouter)
 app.use("/api/message", messageRouter)
 
+app.get("/", (req, res)=>{
+    res.json(message: "It's working")
+})
+
 server.listen(PORT, ()=>{
     console.log(`Server running on PORT: ${PORT}`);
     connectDB()
