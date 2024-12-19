@@ -13,11 +13,13 @@ const PORT = process.env.PORT || 2000
 
 
 app.use(cors({
-    origin: ["https://chats-frontend-xi.vercel.app"],
-      methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: "https://chats-frontend-xi.vercel.app",
+      methods: ["GET", "POST", "PUT"],
     credentials: true
 }))
-app.options("*", cors());
+
+
+app.use(cors(corsOptions))
 
 app.use(express.json())
 
