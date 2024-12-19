@@ -6,7 +6,7 @@ const app = express()
 const server = createServer(app)
 const io = new Server(server, {
     cors: {
-        origin: ["https://chats-frontend-virid.vercel.app"]
+        origin: ["https://chats-frontend-virid.vercel.app/"]
     }
 })
 
