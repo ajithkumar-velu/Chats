@@ -15,21 +15,14 @@ const PORT = process.env.PORT || 2000
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-     origin: "https://chats-frontend-xi.vercel.app",
-        methods: ['GET', 'POST', 'PUT', 'DELETE'],
-        credentials: true,}
-))
-
+    origin: ["https://chats-frontend-xi.vercel.app"],
+    credentials: true
+}))
 
 app.use('/api/user', authRouter)
 app.use("/api/message", messageRouter)
-
-app.get("/", (req, res)=>{
-    res.send("It's working")
-})
 
 server.listen(PORT, ()=>{
     console.log(`Server running on PORT: ${PORT}`);
     connectDB()
 })
-
