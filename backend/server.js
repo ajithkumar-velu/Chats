@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors(
     {
-        origin: "https://chats-frontend-virid.vercel.app",
+        origin: "https://chats-frontend-xi.vercel.app",
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
     }
