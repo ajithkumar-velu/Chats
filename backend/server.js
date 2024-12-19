@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 2000
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "https://chats-frontend-virid.vercel.app/",
+    origin: "https://chats-frontend-virid.vercel.app",
     credentials: true
 }))
 
