@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstanace = axios.create({
-    baseURL: "http://localhost:2000/api",
+    baseURL: "https://chats-bnackend.vercel.app/api",
     withCredentials: true
 })
 
