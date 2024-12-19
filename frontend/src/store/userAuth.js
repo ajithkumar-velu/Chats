@@ -3,7 +3,7 @@ import axiosInstanace from '../lib/axiosInstance';
 import toast from 'react-hot-toast';
 import { io } from 'socket.io-client'
 
-const BASE_UTR = "http://localhost:2000"
+const BASE_UTR = "https://chats-bnackend.vercel.app"
 
 export const useAuthStore = create((set, get) => ({
 
