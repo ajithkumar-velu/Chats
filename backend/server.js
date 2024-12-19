@@ -21,6 +21,8 @@ app.use(cors(
     credentials: true
     }
 ))
+app.options('*', cors()); // Handle preflight
+
 
 app.use('/api/user', authRouter)
 app.use("/api/message", messageRouter)
