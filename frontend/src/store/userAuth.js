@@ -20,7 +20,7 @@ export const useAuthStore = create((set, get) => ({
     check: async () => {
         try {
             set({ isChecking: true })
-            const res = await axiosInstanace.post("/user/check", {headers: { "Content-Type" : "application/json"}})
+            const res = await axiosInstanace.post("/user/check")
             set({ authUser: res.data })
             get().connectSocket()
         } catch (error) {
