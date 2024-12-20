@@ -6,9 +6,8 @@ const app = express()
 const server = createServer(app)
 const io = new Server(server, {
     cors: {
-        origin: "https://chats-frontend-xi.vercel.app",
-      methods: ["GET", "POST", "PUT"],
-    credentials: true
+        origin: "https://chats-frontend-xi.vercel.app"
+      
     }
 })
 
